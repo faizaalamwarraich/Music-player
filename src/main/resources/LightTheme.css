@@ -1,0 +1,69 @@
+.table-view {
+    -fx-base: #333333; /* Dark grey background */
+    -fx-control-inner-background: #1f1f1f; /* Very dark grey inner background */
+    -fx-background-color: #1a1a1a; /* Almost black background */
+    -fx-table-cell-border-color: black;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-weight: normal;
+    -fx-text-fill: white; /* White text */
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #555555; /* Dark grey when focused and selected */
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-table-cell-border-color, #333333; /* Dark grey background */
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell .label {
+    -fx-background-color: -fx-table-cell-border-color, #1a1a1a; /* Almost black background */
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+    -fx-alignment: center;
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: -fx-table-cell-border-color, #2e2e2e; /* Slightly lighter grey for odd rows */
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #404040; /* Darker grey for selected rows */
+    -fx-text-fill: #ffffff;
+}
+
+.pane-background:hover {
+    -fx-background-color: #404040; /* Darker grey on hover */
+}
+
+.border-pane {
+    -fx-background-repeat: stretch;
+    -fx-background-size: 600 218;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#imagePane {
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100 100;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.1, 0, 0);
+}
