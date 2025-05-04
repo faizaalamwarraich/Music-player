@@ -1,0 +1,1 @@
+This is a Java-based Music Player application with a Graphical User Interface, built using Maven. The project integrates core Data Structures and Algorithms (DSA) to manage song playback, playlist handling, and efficient searching. The music player supports .mp3 file playback and showcases how DSA can be applied in real-world GUI applications.
